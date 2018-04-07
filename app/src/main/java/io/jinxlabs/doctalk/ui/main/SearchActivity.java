@@ -125,6 +125,5 @@ public class SearchActivity extends BaseActivity implements SearchView {
     protected void onStop() {
         super.onStop();
         presenter.detachView();
-        bind.unbind();
     }
 }
