@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import io.jinxlabs.doctalk.injection.component.ApplicationComponent;
-import uk.jinxlabs.doctalk.androidboilerplate.injection.component.DaggerApplicationComponent;
+import io.jinxlabs.doctalk.injection.component.DaggerApplicationComponent;
 import io.jinxlabs.doctalk.injection.module.ApplicationModule;
 
 public class DocTalkApplication extends Application  {

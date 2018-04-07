@@ -6,10 +6,10 @@ import android.util.LongSparseArray;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import uk.jinxlabs.doctalk.androidboilerplate.BoilerplateApplication;
+import io.jinxlabs.doctalk.DocTalkApplication;
 import io.jinxlabs.doctalk.injection.component.ActivityComponent;
 import io.jinxlabs.doctalk.injection.component.ConfigPersistentComponent;
-import uk.jinxlabs.doctalk.androidboilerplate.injection.component.DaggerConfigPersistentComponent;
+import io.jinxlabs.doctalk.injection.component.DaggerConfigPersistentComponent;
 import io.jinxlabs.doctalk.injection.module.ActivityModule;
 
 /**
@@ -40,7 +40,7 @@ public class BaseActivity extends AppCompatActivity {
 
         if (configPersistentComponent == null) {
             configPersistentComponent = DaggerConfigPersistentComponent.builder()
-                    .applicationComponent(BoilerplateApplication.get(this).getComponent())
+                    .applicationComponent(DocTalkApplication.get(this).getComponent())
                     .build();
             sComponentsMap.put(mActivityId, configPersistentComponent);
         }

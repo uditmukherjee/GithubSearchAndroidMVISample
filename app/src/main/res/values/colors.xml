@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#222222</color>
-    <color name="primary_dark">#000000</color>
-    <color name="accent">#FFFFFF</color>
-    <color name="gray">#ffdfdfdf</color>
+    <color name="colorPrimaryDark">#56CCF2</color>
+    <color name="colorPrimary">#2F80ED</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="card_background_semi_transparent">#31000000</color>
+    <color name="text_color_light">#90ffffff</color>
 </resources>
